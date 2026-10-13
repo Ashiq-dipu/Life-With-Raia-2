@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Stories & Visual Diary — Life With Raia 📸</title>
+  <meta name="description" content="Browse through moments, moods, and memories. Curated 35mm film photography and visual stories by Raia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brandLogo">
+        <span class="logo-sparkle">✦</span>
+        <span class="logo-text">Life With Raia</span>
+        <span class="logo-badge">Est. 2026</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="videos.html" class="nav-link">Videos</a></li>
+          <li><a href="photos.html" class="nav-link active">Photos</a></li>
+          <li><a href="stories.html" class="nav-link">Stories</a></li>
+          <li><a href="updates.html" class="nav-link">Updates</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Warm Day or Dusk Theme" title="Switch Theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+          <span class="theme-label">Warmth</span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary-sm header-cta">
+          <span>Say Hi</span>
+          <span class="btn-arrow">✨</span>
+        </a>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="page-hero-section">
+      <div class="container page-hero-container">
+        <div class="page-hero-badge">
+          <span>📸 Visual Diary & Film Archive</span>
+        </div>
+        <h1 class="page-hero-title">
+          "A picture is worth a thousand words — and I have a lot to say."
+        </h1>
+        <p class="page-hero-desc">
+          Life looks better in pictures. Browse through moments, moods, and memories — curated but never fake.
+        </p>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Hub -->
+    <section class="section photos-section">
+      <div class="container">
+        <!-- Gallery Filter Pills -->
+        <div class="filter-controls-container">
+          <div class="filter-pills-scroll" id="photoCategoryFilters">
+            <button class="filter-pill active" data-category="all">All Photos</button>
+            <button class="filter-pill" data-category="Everyday Magic">✨ Everyday Magic</button>
+            <button class="filter-pill" data-category="Golden Hours">🌅 Golden Hours</button>
+            <button class="filter-pill" data-category="Food & Mood">🍜 Food & Mood</button>
+            <button class="filter-pill" data-category="Places I've Been">🏙️ Places I've Been</button>
+            <button class="filter-pill" data-category="Just Me">🪞 Just Me</button>
+            <button class="filter-pill" data-category="Moments Worth Remembering">🎊 Moments Worth Remembering</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Photo Gallery Grid -->
+        <div class="photo-gallery-grid" id="photoGalleryGrid">
+          <!-- Item 1: Golden Hours -->
+          <div class="gallery-item" data-category="Golden Hours" data-caption="the kind of evening you don't want to end 🌙" data-src="assets/golden_hour_coast.jpg">
+            <div class="gallery-card">
+              <img src="assets/golden_hour_coast.jpg" alt="Golden coastal sunset with wildflowers" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">🌅 Golden Hours</span>
+                <p class="overlay-caption">"the kind of evening you don't want to end 🌙"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Just Me -->
+          <div class="gallery-item" data-category="Just Me" data-caption="she's figuring it out, one photo at a time 📷" data-src="assets/raia_portrait.jpg">
+            <div class="gallery-card">
+              <img src="assets/raia_portrait.jpg" alt="Raia smiling holding 35mm camera" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">🪞 Just Me</span>
+                <p class="overlay-caption">"she's figuring it out, one photo at a time 📷"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Everyday Magic -->
+          <div class="gallery-item" data-category="Everyday Magic" data-caption="ordinary day, extraordinary light ☀️" data-src="assets/everyday_magic.jpg">
+            <div class="gallery-card">
+              <img src="assets/everyday_magic.jpg" alt="Journaling morning with coffee and pressed flowers" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">✨ Everyday Magic</span>
+                <p class="overlay-caption">"ordinary day, extraordinary light ☀️"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Places I've Been -->
+          <div class="gallery-item" data-category="Places I've Been" data-caption="somewhere between lost and found 🌿" data-src="assets/places_city_travel.jpg">
+            <div class="gallery-card">
+              <img src="assets/places_city_travel.jpg" alt="European cafe terrace with bougainvillea" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">🏙️ Places I've Been</span>
+                <p class="overlay-caption">"somewhere between lost and found 🌿"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Food & Mood -->
+          <div class="gallery-item" data-category="Food & Mood" data-caption="fed my soul today 🍜" data-src="assets/food_mood_ramen.jpg">
+            <div class="gallery-card">
+              <img src="assets/food_mood_ramen.jpg" alt="Steaming artisanal ramen bowl on rustic wooden table" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">🍜 Food & Mood</span>
+                <p class="overlay-caption">"fed my soul today 🍜"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Moments Worth Remembering -->
+          <div class="gallery-item" data-category="Moments Worth Remembering" data-caption="the exact moment we realized we were making memories 🎈" data-src="assets/featured_vlog.jpg">
+            <div class="gallery-card">
+              <img src="assets/featured_vlog.jpg" alt="Vlogging during sunset in coastal old town" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">🎊 Moments Worth Remembering</span>
+                <p class="overlay-caption">"the exact moment we realized we were making memories 🎈"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Banner -->
+        <div class="youtube-banner glass-panel" style="margin-top: 50px;">
+          <div class="youtube-banner-text">
+            <h3>Daily Photo Dumps on Instagram 📸</h3>
+            <p>Over 200+ photos archived. Follow @lifewithraia for uncurated camera roll stories, film scans, and everyday moments.</p>
+          </div>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Follow @lifewithraia</span>
+            <span class="btn-icon">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-backdrop" id="photoLightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-wrapper">
+      <button class="modal-close-btn" id="closeLightboxBtn" aria-label="Close photo viewer">&times;</button>
+      <button class="lightbox-nav-btn prev-btn" id="prevPhotoBtn" aria-label="Previous photo">&#10094;</button>
+      <div class="lightbox-content-box">
+        <img src="" alt="Enlarged photo" id="lightboxImg" class="lightbox-img" />
+        <div class="lightbox-caption-bar">
+          <span class="lightbox-tag" id="lightboxTag">✨ Everyday Magic</span>
+          <p class="lightbox-caption" id="lightboxCaption">Caption goes here</p>
+        </div>
+      </div>
+      <button class="lightbox-nav-btn next-btn" id="nextPhotoBtn" aria-label="Next photo">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- 🔻 Footer -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="newsletter-box glass-panel" id="newsletterSignup">
+        <div class="newsletter-content">
+          <span class="newsletter-pill">💌 The Raia Letter</span>
+          <h3 class="newsletter-title">Join the community</h3>
+          <p class="newsletter-desc">
+            "Get updates, behind-the-scenes, and good vibes straight to your inbox."
+          </p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <div class="newsletter-input-group">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required aria-label="Email for newsletter" />
+            <button type="submit" class="btn btn-primary" id="newsletterSubmitBtn">
+              <span>Subscribe ✨</span>
+            </button>
+          </div>
+          <span class="newsletter-feedback" id="newsletterFeedback"></span>
+        </form>
+      </div>
+
+      <div class="footer-main-row">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-logo">
+            <span class="logo-sparkle">✦</span>
+            <span class="logo-text">Life With Raia</span>
+          </a>
+          <p class="footer-tagline">
+            <em>Life With Raia — Real life. Real moments. Always growing. ✨</em>
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="footer-legal">
+          &copy; 2026 Life With Raia. All rights reserved.
+        </p>
+        <div class="footer-back-to-top">
+          <a href="#" class="back-top-link" id="backToTopBtn">
+            <span>Back to top</span>
+            <span>&uarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>

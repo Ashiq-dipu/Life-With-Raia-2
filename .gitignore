@@ -1,0 +1,15 @@
+# Dependencies & Builds
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

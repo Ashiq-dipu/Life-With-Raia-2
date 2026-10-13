@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life With Raia — Real life. Real moments. Always growing. ✨</title>
+  <meta name="description" content="Welcome to Life With Raia — a space where real moments, big dreams, and everyday adventures come together. Vlogs, photo diaries, personal stories, and community." />
+  <meta property="og:title" content="Life With Raia — Creator & Storyteller" />
+  <meta property="og:description" content="This is my life — and I'm just getting started. Come hang out." />
+  <meta property="og:image" content="assets/raia_portrait.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brandLogo">
+        <span class="logo-sparkle">✦</span>
+        <span class="logo-text">Life With Raia</span>
+        <span class="logo-badge">Est. 2026</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="videos.html" class="nav-link">Videos</a></li>
+          <li><a href="photos.html" class="nav-link">Photos</a></li>
+          <li><a href="stories.html" class="nav-link">Stories</a></li>
+          <li><a href="updates.html" class="nav-link">Updates</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle: Warm Day / Dusk Twilight -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Warm Day or Dusk Theme" title="Switch Theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+          <span class="theme-label">Warmth</span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary-sm header-cta" id="headerContactBtn">
+          <span>Say Hi</span>
+          <span class="btn-arrow">✨</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 🏠 Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag-badge">
+            <span class="badge-dot"></span>
+            <span>Welcome to My Creative Journal</span>
+          </div>
+
+          <h1 class="hero-headline">
+            "This is my life — <br />
+            <span class="hero-highlight">and I'm just getting started."</span>
+          </h1>
+
+          <p class="hero-subheadline">
+            Welcome to Life With Raia — a space where real moments, big dreams, and everyday adventures come together. Come hang out. ✨
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="about.html" class="btn btn-primary" id="heroCtaAbout">
+              <span>Get to Know Me</span>
+              <span class="btn-icon">👋</span>
+            </a>
+            <a href="updates.html" class="btn btn-secondary" id="heroCtaUpdates">
+              <span>See What's New</span>
+              <span class="btn-icon">🚀</span>
+            </a>
+          </div>
+
+          <!-- Interactive Stats Bar -->
+          <div class="stats-bar" id="statsBar">
+            <div class="stat-item">
+              <div class="stat-icon-wrap">📹</div>
+              <div class="stat-details">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Videos</span>
+              </div>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <div class="stat-icon-wrap">📸</div>
+              <div class="stat-details">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">Photos</span>
+              </div>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <div class="stat-icon-wrap">💌</div>
+              <div class="stat-details">
+                <span class="stat-number">Weekly</span>
+                <span class="stat-label">Updates</span>
+              </div>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <div class="stat-icon-wrap">🌍</div>
+              <div class="stat-details">
+                <span class="stat-number">Growing</span>
+                <span class="stat-label">Community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual-col">
+          <div class="hero-portrait-card">
+            <div class="portrait-glow"></div>
+            <div class="portrait-frame">
+              <img src="assets/raia_portrait.jpg" alt="Raia smiling warmly with her 35mm camera" class="hero-portrait-img" id="heroPortraitImg" />
+              <div class="polaroid-caption">
+                <span class="caption-handwritten">Raia · Coffee & 35mm mornings ☕</span>
+                <span class="live-pill"><span class="pulse-indicator"></span> Real Life</span>
+              </div>
+            </div>
+
+            <!-- Floating Micro-Cards -->
+            <div class="floating-badge badge-vibe">
+              <span class="badge-icon">🌿</span>
+              <div class="badge-text">
+                <strong>Raw & Honest</strong>
+                <small>No fake highlights</small>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-next">
+              <span class="badge-icon">🎬</span>
+              <div class="badge-text">
+                <strong>New Vlog Drops</strong>
+                <small>Every Thursday 6PM</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✨ Currently Loving / Raia's Weekly Rotation -->
+    <section class="section rotation-section" id="rotation">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">✨ Current Rotation · September 2026</span>
+          <h2 class="section-headline">
+            "What's Inspiring Me Right Now"
+          </h2>
+          <p class="section-subtext">
+            A little peek into my week — what's playing in my headphones, what's on my desk, and the quiet details making life feel magical.
+          </p>
+        </div>
+
+        <div class="rotation-grid">
+          <!-- Item 1: In My Headphones -->
+          <div class="rotation-card glass-panel">
+            <span class="rotation-card-tag">🎧 In My Headphones</span>
+            <h3 class="rotation-card-title">Late Night Drives & Lo-Fi Waves</h3>
+            <p class="rotation-card-desc">Warm Rhodes piano chords, gentle vinyl crackle, and nostalgic synth melodies keeping me company during late editing sessions.</p>
+            <div class="mini-audio-player">
+              <button class="mini-audio-btn" id="miniAudioBtn" aria-label="Toggle preview audio">▶</button>
+              <div class="mini-audio-info">
+                <span class="mini-audio-track">Golden Hour Frequency</span>
+                <span class="mini-audio-artist">Raia's Studio Mix · 02:45</span>
+              </div>
+              <div class="waveform-anim">
+                <span class="waveform-bar"></span>
+                <span class="waveform-bar"></span>
+                <span class="waveform-bar"></span>
+                <span class="waveform-bar"></span>
+              </div>
+            </div>
+            <div class="rotation-card-meta">
+              <span>On Spotify & Apple Music</span>
+              <span>Updated Weekly</span>
+            </div>
+          </div>
+
+          <!-- Item 2: The Morning Ritual -->
+          <div class="rotation-card glass-panel">
+            <span class="rotation-card-tag">☕ The Morning Ritual</span>
+            <h3 class="rotation-card-title">Iced Oat Honey Latte</h3>
+            <p class="rotation-card-desc">Two shots of light-roast Ethiopian espresso, creamy oat milk, a teaspoon of raw wildflower honey, and freshly grated cinnamon.</p>
+            <div class="rotation-card-meta">
+              <span>Brew Ratio: 1:2 Espresso</span>
+              <span class="text-accent">Comfort Level: 10/10 ✨</span>
+            </div>
+          </div>
+
+          <!-- Item 3: On The Bedside Table -->
+          <div class="rotation-card glass-panel">
+            <span class="rotation-card-tag">📚 On My Bedside Table</span>
+            <h3 class="rotation-card-title">The Comfort Book</h3>
+            <p class="rotation-card-desc">Short reflections on hope, self-compassion, and remembering that messy, unhurried progress is still beautiful progress.</p>
+            <div class="rotation-card-meta">
+              <span>By Matt Haig</span>
+              <span>Page 142 of 272</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Current Obsession -->
+          <div class="rotation-card glass-panel">
+            <span class="rotation-card-tag">🌿 Current Vibe & Obsession</span>
+            <h3 class="rotation-card-title">35mm Film & Sunset Walks</h3>
+            <p class="rotation-card-desc">Leaving the phone in airplane mode between 6 PM and 8 PM, catching the amber light spilling across the neighborhood rooftops.</p>
+            <div class="rotation-card-meta">
+              <span>Kodak Portra 400</span>
+              <span class="text-accent">Lisbon Sunset Club</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Vibe of the Week Poll -->
+        <div class="vibe-poll-bar glass-panel">
+          <div class="vibe-poll-prompt">
+            <strong>What's your energy this week?</strong>
+            <span>Tap your vibe to sync with the community circle:</span>
+          </div>
+          <div class="vibe-options" id="vibeOptions">
+            <button class="vibe-chip" data-vibe="☕ Slow & Cozy Reset">☕ Slow & Cozy Reset</button>
+            <button class="vibe-chip" data-vibe="🎨 Deep Creative Flow">🎨 Deep Creative Flow</button>
+            <button class="vibe-chip" data-vibe="✈️ Spontaneous Wanderlust">✈️ Spontaneous Wanderlust</button>
+            <button class="vibe-chip" data-vibe="🌙 Honest Conversations">🌙 Honest Conversations</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🌸 Spaces (What This Space Is About) -->
+    <section class="section pillars-section" id="spaces">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Curated Spaces</span>
+          <h2 class="section-headline">
+            "A little bit of everything — because life doesn't fit in one box."
+          </h2>
+          <p class="section-subtext">
+            Explore the core pillars of Life With Raia. Click any space to dive directly into that page.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Card 1: Vlogs & Videos -->
+          <a href="videos.html" class="pillar-card glass-panel">
+            <div class="pillar-icon-box">🎥</div>
+            <div class="pillar-content">
+              <h3>Vlogs & Videos</h3>
+              <p>Real, unfiltered moments captured on camera. From day-in-my-life videos to travel diaries — if it happened, there's probably a vlog about it.</p>
+              <span class="pillar-action">Go to Videos Hub &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Card 2: Photo Stories -->
+          <a href="photos.html" class="pillar-card glass-panel">
+            <div class="pillar-icon-box">📸</div>
+            <div class="pillar-content">
+              <h3>Photo Stories</h3>
+              <p>Life looks better in pictures. Browse through moments, moods, and memories — curated but never fake.</p>
+              <span class="pillar-action">Browse Photo Diary &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Card 3: Thoughts & Reflections -->
+          <a href="stories.html" class="pillar-card glass-panel">
+            <div class="pillar-icon-box">💭</div>
+            <div class="pillar-content">
+              <h3>Thoughts & Reflections</h3>
+              <p>Sometimes I just need to talk. Personal essays, life updates, and honest conversations about the things that actually matter.</p>
+              <span class="pillar-action">Read Stories &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Card 4: Adventures & Travel -->
+          <a href="photos.html" class="pillar-card glass-panel">
+            <div class="pillar-icon-box">🌍</div>
+            <div class="pillar-content">
+              <h3>Adventures & Travel</h3>
+              <p>New cities, hidden spots, spontaneous trips. I go, I explore, I tell you all about it.</p>
+              <span class="pillar-action">Explore Places &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Card 5: Projects & Goals -->
+          <a href="updates.html" class="pillar-card glass-panel">
+            <div class="pillar-icon-box">🎯</div>
+            <div class="pillar-content">
+              <h3>Projects & Goals</h3>
+              <p>Big things are always in the works. Follow along as I build, create, and figure things out in real time.</p>
+              <span class="pillar-action">View Project Roadmap &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Card 6: Community -->
+          <a href="contact.html" class="pillar-card glass-panel">
+            <div class="pillar-icon-box">💌</div>
+            <div class="pillar-content">
+              <h3>Community</h3>
+              <p>This isn't just my space — it's ours. Your comments, messages, and energy are what make this whole thing worth it.</p>
+              <span class="pillar-action">Say Hello &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎬 Featured Video Spotlight Preview -->
+    <section class="section home-video-preview">
+      <div class="container">
+        <div class="section-head-split">
+          <div>
+            <span class="section-kicker">Watch Along</span>
+            <h2 class="section-headline">"Grab some snacks. We're watching together."</h2>
+          </div>
+          <a href="videos.html" class="view-all-link">
+            <span>Explore All Videos (50+)</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <div class="featured-video-card glass-panel">
+          <div class="featured-video-media">
+            <img src="assets/featured_vlog.jpg" alt="A Week in My Life - New Beginnings & Big Changes" class="featured-thumb-img" />
+            <div class="media-overlay"></div>
+            <button class="play-btn-large" id="playFeaturedBtn" aria-label="Play Featured Video">
+              <span class="play-triangle"></span>
+            </button>
+            <div class="video-duration-pill">18:42</div>
+            <div class="video-badge-new">Featured Release</div>
+          </div>
+          <div class="featured-video-info">
+            <div class="video-meta-tags">
+              <span class="badge-accent">🗓️ Day In My Life</span>
+              <span class="meta-date">September 2026</span>
+              <span class="meta-views">42K Views</span>
+            </div>
+            <h3 class="featured-video-title">
+              "A Week in My Life — New Beginnings & Big Changes"
+            </h3>
+            <p class="featured-video-desc">
+              The one where everything shifted. Behind the scenes of taking on new creative projects, moving through transitions, and finding joy in everyday moments.
+            </p>
+            <div class="featured-video-actions">
+              <button class="btn btn-primary" id="watchFeaturedBtn">
+                <span>Watch Episode</span>
+                <span class="btn-icon">▶</span>
+              </button>
+              <a href="videos.html" class="btn btn-outline">
+                <span>View Full Playlist</span>
+                <span class="btn-icon">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📸 Photo Gallery Teaser -->
+    <section class="section home-photos-preview">
+      <div class="container">
+        <div class="section-head-split">
+          <div>
+            <span class="section-kicker">Visual Archive</span>
+            <h2 class="section-headline">"A picture is worth a thousand words — and I have a lot to say."</h2>
+          </div>
+          <a href="photos.html" class="view-all-link">
+            <span>View Complete Gallery (200+ Photos)</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <div class="photo-gallery-grid" id="photoGalleryGrid">
+          <div class="gallery-item" data-category="Golden Hours" data-caption="the kind of evening you don't want to end 🌙" data-src="assets/golden_hour_coast.jpg">
+            <div class="gallery-card">
+              <img src="assets/golden_hour_coast.jpg" alt="Golden coastal sunset" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">🌅 Golden Hours</span>
+                <p class="overlay-caption">"the kind of evening you don't want to end 🌙"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="Everyday Magic" data-caption="ordinary day, extraordinary light ☀️" data-src="assets/everyday_magic.jpg">
+            <div class="gallery-card">
+              <img src="assets/everyday_magic.jpg" alt="Journaling morning with coffee" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">✨ Everyday Magic</span>
+                <p class="overlay-caption">"ordinary day, extraordinary light ☀️"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="Places I've Been" data-caption="somewhere between lost and found 🌿" data-src="assets/places_city_travel.jpg">
+            <div class="gallery-card">
+              <img src="assets/places_city_travel.jpg" alt="European cafe terrace" loading="lazy" />
+              <div class="gallery-overlay">
+                <span class="overlay-tag">🏙️ Places I've Been</span>
+                <p class="overlay-caption">"somewhere between lost and found 🌿"</p>
+                <span class="expand-btn">🔍 View Full Size</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✍️ Featured Essay Teaser -->
+    <section class="section home-story-preview">
+      <div class="container">
+        <div class="section-head-split">
+          <div>
+            <span class="section-kicker">Words & Thoughts</span>
+            <h2 class="section-headline">"When a video isn't enough — I write it out."</h2>
+          </div>
+          <a href="stories.html" class="view-all-link">
+            <span>Read All Essays (8 Posts)</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <article class="featured-post-card glass-panel">
+          <div class="featured-post-badge">
+            <span>🌟 Featured Story</span>
+            <span>· 6 Min Read</span>
+          </div>
+          <h3 class="featured-post-title">
+            "Why I Started Life With Raia (And Why It Took Me So Long)"
+          </h3>
+          <p class="featured-post-excerpt">
+            The honest story behind the brand, the fear, the excitement, and what finally made me just go for it. For years, I hid behind perfectionism. Here is what shifted when I stopped waiting to feel 'ready'.
+          </p>
+          <div class="featured-post-footer">
+            <div class="author-meta">
+              <img src="assets/raia_portrait.jpg" alt="Raia" class="mini-avatar" />
+              <div>
+                <strong>Raia</strong>
+                <small>September 2026 · Personal Essay</small>
+              </div>
+            </div>
+            <a href="stories.html" class="btn btn-primary">
+              <span>Read Full Essay</span>
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 💌 Community Notes & Honest Conversations -->
+    <section class="section community-section" id="community">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">💌 The Community Circle</span>
+          <h2 class="section-headline">
+            "Notes From You — Why This Space Exists"
+          </h2>
+          <p class="section-subtext">
+            This isn't a one-way broadcast. It's a shared conversation with people from all over the world who choose real life over highlight reels.
+          </p>
+        </div>
+
+        <div class="community-grid">
+          <!-- Community Note 1 -->
+          <div class="community-note-card glass-panel">
+            <div class="community-quote-mark">“</div>
+            <p class="community-note-text">
+              Watching your morning routine vlog felt like FaceTiming a close friend over coffee. You gave me the courage to finally leave a job that was draining my spirit.
+            </p>
+            <div class="community-author">
+              <div class="community-author-avatar">🌿</div>
+              <div class="community-author-details">
+                <span class="community-author-name">Maya Lin</span>
+                <span class="community-author-location">New York City, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Community Note 2 -->
+          <div class="community-note-card glass-panel">
+            <div class="community-quote-mark">“</div>
+            <p class="community-note-text">
+              The essay about the 'messy middle' made me cry happy tears on my train ride home. Thank you for never pretending you have everything figured out.
+            </p>
+            <div class="community-author">
+              <div class="community-author-avatar">☕</div>
+              <div class="community-author-details">
+                <span class="community-author-name">Leo Sterling</span>
+                <span class="community-author-location">London, UK</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Community Note 3 -->
+          <div class="community-note-card glass-panel">
+            <div class="community-quote-mark">“</div>
+            <p class="community-note-text">
+              I moved across the country alone last month and was feeling so lost. Your Thursday videos have been my grounding anchor every single week.
+            </p>
+            <div class="community-author">
+              <div class="community-author-avatar">🌸</div>
+              <div class="community-author-details">
+                <span class="community-author-name">Priya Patel</span>
+                <span class="community-author-location">Toronto, Canada</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Vlog Topic Suggestion Box -->
+          <div class="vlog-prompt-box glass-panel">
+            <span class="section-kicker" style="margin-bottom: 4px;">🎬 Community Co-Creation</span>
+            <h3>Got an idea for next week's vlog?</h3>
+            <p>Tell me what you want to watch or talk about next. I read every single sticky note!</p>
+            <form class="vlog-prompt-form" id="vlogPromptForm">
+              <input type="text" class="vlog-prompt-input" id="vlogPromptInput" placeholder="e.g. A week of solo museum dates..." required />
+              <button type="submit" class="btn btn-primary-sm vlog-prompt-btn">
+                <span>Drop Sticky Note ✨</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 🔻 Footer -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <!-- Newsletter Signup Banner -->
+      <div class="newsletter-box glass-panel" id="newsletterSignup">
+        <div class="newsletter-content">
+          <span class="newsletter-pill">💌 The Raia Letter</span>
+          <h3 class="newsletter-title">Join the community</h3>
+          <p class="newsletter-desc">
+            "Get updates, behind-the-scenes, and good vibes straight to your inbox."
+          </p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <div class="newsletter-input-group">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required aria-label="Email for newsletter" />
+            <button type="submit" class="btn btn-primary" id="newsletterSubmitBtn">
+              <span>Subscribe ✨</span>
+            </button>
+          </div>
+          <span class="newsletter-feedback" id="newsletterFeedback"></span>
+        </form>
+      </div>
+
+      <div class="footer-main-row">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-logo">
+            <span class="logo-sparkle">✦</span>
+            <span class="logo-text">Life With Raia</span>
+          </a>
+          <p class="footer-tagline">
+            <em>Life With Raia — Real life. Real moments. Always growing. ✨</em>
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="footer-legal">
+          &copy; 2026 Life With Raia. All rights reserved.
+        </p>
+        <div class="footer-back-to-top">
+          <a href="#home" class="back-top-link" id="backToTopBtn" aria-label="Back to top">
+            <span>Back to top</span>
+            <span>&uarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Photo Gallery -->
+  <div class="modal-backdrop" id="photoLightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-wrapper">
+      <button class="modal-close-btn" id="closeLightboxBtn" aria-label="Close photo viewer">&times;</button>
+      <button class="lightbox-nav-btn prev-btn" id="prevPhotoBtn" aria-label="Previous photo">&#10094;</button>
+      <div class="lightbox-content-box">
+        <img src="" alt="Enlarged photo" id="lightboxImg" class="lightbox-img" />
+        <div class="lightbox-caption-bar">
+          <span class="lightbox-tag" id="lightboxTag">✨ Everyday Magic</span>
+          <p class="lightbox-caption" id="lightboxCaption">Caption goes here</p>
+        </div>
+      </div>
+      <button class="lightbox-nav-btn next-btn" id="nextPhotoBtn" aria-label="Next photo">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Video Player Modal -->
+  <div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="video-modal-wrapper glass-panel">
+      <div class="video-modal-header">
+        <div class="video-modal-title-wrap">
+          <span class="video-badge-pill" id="videoModalBadge">🗓️ Day In My Life</span>
+          <h3 class="video-modal-title" id="videoModalTitle">Video Title</h3>
+        </div>
+        <button class="modal-close-btn" id="closeVideoModalBtn" aria-label="Close video player">&times;</button>
+      </div>
+      <div class="video-player-container">
+        <div class="simulated-player" id="simulatedPlayer">
+          <img src="assets/featured_vlog.jpg" alt="Video scene preview" id="videoModalThumb" class="sim-player-thumb" />
+          <div class="sim-player-controls-overlay">
+            <button class="sim-play-toggle" id="simPlayToggle" aria-label="Play or pause video">
+              <span class="sim-icon-play" id="simPlayIcon">▶</span>
+            </button>
+            <div class="sim-progress-track" id="simProgressTrack">
+              <div class="sim-progress-bar" id="simProgressBar"></div>
+            </div>
+            <div class="sim-time-display" id="simTimeDisplay">00:00 / 18:42</div>
+          </div>
+          <div class="sim-watermark">Life With Raia · Official Player</div>
+        </div>
+      </div>
+      <div class="video-modal-footer">
+        <p id="videoModalDesc">Video description goes here.</p>
+        <div class="video-modal-actions">
+          <button class="btn btn-secondary-sm" id="copyVideoLinkBtn">🔗 Copy Link</button>
+          <a href="videos.html" class="btn btn-primary-sm">Browse All Videos &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

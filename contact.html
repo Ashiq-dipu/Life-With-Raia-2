@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Social Directory — Life With Raia 📬</title>
+  <meta name="description" content="Reach out to Raia for brand collaborations, podcast appearances, creative partnerships, or just to say hello." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brandLogo">
+        <span class="logo-sparkle">✦</span>
+        <span class="logo-text">Life With Raia</span>
+        <span class="logo-badge">Est. 2026</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="videos.html" class="nav-link">Videos</a></li>
+          <li><a href="photos.html" class="nav-link">Photos</a></li>
+          <li><a href="stories.html" class="nav-link">Stories</a></li>
+          <li><a href="updates.html" class="nav-link">Updates</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Warm Day or Dusk Theme" title="Switch Theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+          <span class="theme-label">Warmth</span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary-sm header-cta">
+          <span>Say Hi</span>
+          <span class="btn-arrow">✨</span>
+        </a>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="page-hero-section">
+      <div class="container page-hero-container">
+        <div class="page-hero-badge">
+          <span>📬 Open Inbox & Community</span>
+        </div>
+        <h1 class="page-hero-title">
+          "Let's talk. I love hearing from you."
+        </h1>
+        <p class="page-hero-desc">
+          Whether you're a brand looking to collaborate, a fellow creator wanting to connect, or just someone who wants to say hi — my inbox is always open. Seriously, reach out.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact & Direct Notes Section -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Inquiry Channels -->
+          <div class="contact-info-col">
+            <div class="inquiry-card glass-panel" data-subject="Collab">
+              <div class="inquiry-icon">💼</div>
+              <div class="inquiry-details">
+                <h4>Brand & Collaboration Inquiries</h4>
+                <p>For partnerships, sponsorships, and creative brand projects.</p>
+                <span class="inquiry-email">📧 collabs@lifewithraia.com</span>
+              </div>
+            </div>
+
+            <div class="inquiry-card glass-panel" data-subject="Just Saying Hi">
+              <div class="inquiry-icon">💌</div>
+              <div class="inquiry-details">
+                <h4>General Messages & Fan Mail</h4>
+                <p>Just want to say something? I'd love to hear your thoughts.</p>
+                <span class="inquiry-email">📧 hello@lifewithraia.com</span>
+              </div>
+            </div>
+
+            <div class="inquiry-card glass-panel" data-subject="Business">
+              <div class="inquiry-icon">🎙️</div>
+              <div class="inquiry-details">
+                <h4>Media & Press</h4>
+                <p>For podcast features, interviews, press kits, and speaking.</p>
+                <span class="inquiry-email">📧 press@lifewithraia.com</span>
+              </div>
+            </div>
+
+            <div class="response-note glass-panel">
+              <span class="note-icon">💕</span>
+              <p>
+                <em>"I read every message. Response time is usually 2–3 days. Can't wait to hear from you 💕"</em>
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive Direct Note Form -->
+          <div class="contact-form-col glass-panel">
+            <h3 class="form-title">Send a Direct Note ✨</h3>
+            <p class="form-subtext">Fill this out and it lands straight in my inbox.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contactName">Your Name <span class="required">*</span></label>
+                <input type="text" id="contactName" name="name" placeholder="e.g. Maya Lin" required />
+                <span class="field-error" id="nameError">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Your Email <span class="required">*</span></label>
+                <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required />
+                <span class="field-error" id="emailError">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject <span class="required">*</span></label>
+                <select id="contactSubject" name="subject" required>
+                  <option value="" disabled selected>Select a conversation topic...</option>
+                  <option value="Collab">💼 Brand / Collab Opportunity</option>
+                  <option value="Just Saying Hi">💌 Just Saying Hi & Kind Words</option>
+                  <option value="Business">🎙️ Media / Press / Speaking</option>
+                  <option value="Other">✨ Other Creative Thoughts</option>
+                </select>
+                <span class="field-error" id="subjectError">Please select a subject</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message <span class="required">*</span></label>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="Share your thoughts, ideas, or questions here..." required></textarea>
+                <span class="field-error" id="messageError">Please type your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitContactBtn">
+                <span>Send It ✨</span>
+                <span class="btn-icon">🚀</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Social Media Hub Section -->
+        <div class="social-section-wrapper" style="margin-top: 80px;">
+          <div class="section-header text-center">
+            <span class="section-kicker">Find Me Online</span>
+            <h2 class="section-headline">
+              "Come find me — I'm always around."
+            </h2>
+            <p class="section-subtext social-quote">
+              "Follow along, send a DM, drop a comment — I actually read everything. Let's be friends."
+            </p>
+          </div>
+
+          <!-- Social Cards Grid -->
+          <div class="social-cards-grid">
+            <div class="social-card glass-panel" data-platform="instagram">
+              <span class="social-icon">📸</span>
+              <span class="social-platform-name">Instagram</span>
+              <span class="social-handle">@lifewithraia</span>
+              <p class="social-vibe">Photos, reels, daily moments</p>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <span>Visit Instagram ↗</span>
+              </a>
+            </div>
+
+            <div class="social-card glass-panel" data-platform="tiktok">
+              <span class="social-icon">🎵</span>
+              <span class="social-platform-name">TikTok</span>
+              <span class="social-handle">@lifewithraia</span>
+              <p class="social-vibe">Short videos, trends, real talk</p>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <span>Visit TikTok ↗</span>
+              </a>
+            </div>
+
+            <div class="social-card glass-panel" data-platform="youtube">
+              <span class="social-icon">▶️</span>
+              <span class="social-platform-name">YouTube</span>
+              <span class="social-handle">Life With Raia</span>
+              <p class="social-vibe">Long-form vlogs & series</p>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <span>Visit YouTube ↗</span>
+              </a>
+            </div>
+
+            <div class="social-card glass-panel" data-platform="twitter">
+              <span class="social-icon">𝕏</span>
+              <span class="social-platform-name">Twitter/X</span>
+              <span class="social-handle">@lifewithraia</span>
+              <p class="social-vibe">Thoughts, reactions, hot takes</p>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <span>Visit 𝕏 ↗</span>
+              </a>
+            </div>
+
+            <div class="social-card glass-panel" data-platform="newsletter">
+              <span class="social-icon">💌</span>
+              <span class="social-platform-name">Newsletter</span>
+              <span class="social-handle">The Raia Letter</span>
+              <p class="social-vibe">Weekly personal updates</p>
+              <a href="#newsletterSignup" class="social-btn">
+                <span>Subscribe &darr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Platform Reference Table -->
+          <div class="social-table-wrapper glass-panel">
+            <table class="social-table" aria-label="Social Media Directory">
+              <thead>
+                <tr>
+                  <th scope="col">Platform</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">Vibe</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>📸 Instagram</strong></td>
+                  <td><code class="copy-handle" title="Click to copy">@lifewithraia</code></td>
+                  <td>Photos, reels, daily moments</td>
+                  <td><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="table-link">Visit &rarr;</a></td>
+                </tr>
+                <tr>
+                  <td><strong>🎵 TikTok</strong></td>
+                  <td><code class="copy-handle" title="Click to copy">@lifewithraia</code></td>
+                  <td>Short videos, trends, real talk</td>
+                  <td><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="table-link">Visit &rarr;</a></td>
+                </tr>
+                <tr>
+                  <td><strong>▶️ YouTube</strong></td>
+                  <td><code class="copy-handle" title="Click to copy">Life With Raia</code></td>
+                  <td>Long-form vlogs & series</td>
+                  <td><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="table-link">Visit &rarr;</a></td>
+                </tr>
+                <tr>
+                  <td><strong>𝕏 Twitter/X</strong></td>
+                  <td><code class="copy-handle" title="Click to copy">@lifewithraia</code></td>
+                  <td>Thoughts, reactions, hot takes</td>
+                  <td><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="table-link">Visit &rarr;</a></td>
+                </tr>
+                <tr>
+                  <td><strong>💌 Newsletter</strong></td>
+                  <td><code class="copy-handle" title="Click to copy">The Raia Letter</code></td>
+                  <td>Weekly personal updates</td>
+                  <td><a href="#newsletterSignup" class="table-link">Join &rarr;</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 🔻 Footer -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="newsletter-box glass-panel" id="newsletterSignup">
+        <div class="newsletter-content">
+          <span class="newsletter-pill">💌 The Raia Letter</span>
+          <h3 class="newsletter-title">Join the community</h3>
+          <p class="newsletter-desc">
+            "Get updates, behind-the-scenes, and good vibes straight to your inbox."
+          </p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <div class="newsletter-input-group">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required aria-label="Email for newsletter" />
+            <button type="submit" class="btn btn-primary" id="newsletterSubmitBtn">
+              <span>Subscribe ✨</span>
+            </button>
+          </div>
+          <span class="newsletter-feedback" id="newsletterFeedback"></span>
+        </form>
+      </div>
+
+      <div class="footer-main-row">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-logo">
+            <span class="logo-sparkle">✦</span>
+            <span class="logo-text">Life With Raia</span>
+          </a>
+          <p class="footer-tagline">
+            <em>Life With Raia — Real life. Real moments. Always growing. ✨</em>
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="footer-legal">
+          &copy; 2026 Life With Raia. All rights reserved.
+        </p>
+        <div class="footer-back-to-top">
+          <a href="#" class="back-top-link" id="backToTopBtn">
+            <span>Back to top</span>
+            <span>&uarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>

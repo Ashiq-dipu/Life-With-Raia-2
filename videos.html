@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos & Vlogs — Life With Raia 🎬</title>
+  <meta name="description" content="Watch Life With Raia vlogs, travel diaries, honest conversations, and daily routines. Grab some snacks, we're watching together." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" id="brandLogo">
+        <span class="logo-sparkle">✦</span>
+        <span class="logo-text">Life With Raia</span>
+        <span class="logo-badge">Est. 2026</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="videos.html" class="nav-link active">Videos</a></li>
+          <li><a href="photos.html" class="nav-link">Photos</a></li>
+          <li><a href="stories.html" class="nav-link">Stories</a></li>
+          <li><a href="updates.html" class="nav-link">Updates</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Warm Day or Dusk Theme" title="Switch Theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+          <span class="theme-label">Warmth</span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary-sm header-cta">
+          <span>Say Hi</span>
+          <span class="btn-arrow">✨</span>
+        </a>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="page-hero-section">
+      <div class="container page-hero-container">
+        <div class="page-hero-badge">
+          <span>🎬 Watch & Unwind</span>
+        </div>
+        <h1 class="page-hero-title">
+          "Grab some snacks. We're watching together."
+        </h1>
+        <p class="page-hero-desc">
+          Real, unfiltered moments captured on camera. From day-in-my-life videos to travel diaries — if it happened, there's probably a vlog about it.
+        </p>
+      </div>
+    </section>
+
+    <!-- Videos Main Hub -->
+    <section class="section videos-section">
+      <div class="container">
+        <!-- Featured Video Spotlight -->
+        <div class="featured-video-card glass-panel" id="featuredVideoCard">
+          <div class="featured-video-media">
+            <img src="assets/featured_vlog.jpg" alt="A Week in My Life - New Beginnings & Big Changes" class="featured-thumb-img" />
+            <div class="media-overlay"></div>
+            <button class="play-btn-large" id="playFeaturedBtn" aria-label="Play Featured Video">
+              <span class="play-triangle"></span>
+            </button>
+            <div class="video-duration-pill">18:42</div>
+            <div class="video-badge-new">Featured Release</div>
+          </div>
+          <div class="featured-video-info">
+            <div class="video-meta-tags">
+              <span class="badge-accent">🗓️ Day In My Life</span>
+              <span class="meta-date">September 2026</span>
+              <span class="meta-views">42K Views</span>
+            </div>
+            <h2 class="featured-video-title">
+              "A Week in My Life — New Beginnings & Big Changes"
+            </h2>
+            <p class="featured-video-desc">
+              The one where everything shifted. Come see what's been going on behind the scenes as I take on new creative adventures, move through unexpected transitions, and find joy in the little things.
+            </p>
+            <div class="featured-video-actions">
+              <button class="btn btn-primary" id="watchFeaturedBtn">
+                <span>Watch Episode Now</span>
+                <span class="btn-icon">▶</span>
+              </button>
+              <button class="btn btn-outline" id="saveWatchLaterBtn">
+                <span>Save to Watchlist</span>
+                <span class="btn-icon">🔖</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Categories / Playlist Filter Buttons -->
+        <div class="filter-controls-container">
+          <div class="filter-pills-scroll" id="videoCategoryFilters">
+            <button class="filter-pill active" data-category="all">All Playlists</button>
+            <button class="filter-pill" data-category="Day In My Life">🗓️ Day In My Life</button>
+            <button class="filter-pill" data-category="Travel Diaries">✈️ Travel Diaries</button>
+            <button class="filter-pill" data-category="Let's Talk">💬 Let's Talk</button>
+            <button class="filter-pill" data-category="Special Moments">🎉 Special Moments</button>
+            <button class="filter-pill" data-category="Night Routines">🌙 Night Routines</button>
+            <button class="filter-pill" data-category="Hauls & Favorites">🛍️ Hauls & Favorites</button>
+          </div>
+        </div>
+
+        <!-- Sample Videos Grid -->
+        <div class="videos-grid" id="videosGrid">
+          <!-- Video 1 -->
+          <div class="video-card glass-panel" data-category="Day In My Life" data-title="I Did Everything Differently for a Week — Here's What Happened" data-duration="21:15">
+            <div class="video-card-thumb">
+              <img src="assets/everyday_magic.jpg" alt="I Did Everything Differently for a Week" />
+              <div class="card-play-overlay">
+                <span class="mini-play-icon">▶</span>
+              </div>
+              <span class="duration-badge">21:15</span>
+              <span class="cat-pill">🗓️ Day In My Life</span>
+            </div>
+            <div class="video-card-body">
+              <h3 class="video-card-title">"I Did Everything Differently for a Week — Here's What Happened"</h3>
+              <p class="video-card-summary">Waking up at 5am, trading coffee for matcha, and resetting my entire daily flow.</p>
+              <div class="video-card-foot">
+                <span>28K views · 3 days ago</span>
+                <button class="icon-link-btn">Play &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="video-card glass-panel" data-category="Travel Diaries" data-title="Solo Trip Diaries: Finding Myself One City at a Time" data-duration="24:08">
+            <div class="video-card-thumb">
+              <img src="assets/places_city_travel.jpg" alt="Solo Trip Diaries" />
+              <div class="card-play-overlay">
+                <span class="mini-play-icon">▶</span>
+              </div>
+              <span class="duration-badge">24:08</span>
+              <span class="cat-pill">✈️ Travel Diaries</span>
+            </div>
+            <div class="video-card-body">
+              <h3 class="video-card-title">"Solo Trip Diaries: Finding Myself One City at a Time"</h3>
+              <p class="video-card-summary">Getting wonderfully lost in cobblestone streets, dining alone, and feeling free.</p>
+              <div class="video-card-foot">
+                <span>35K views · 1 week ago</span>
+                <button class="icon-link-btn">Play &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="video-card glass-panel" data-category="Let's Talk" data-title="Honest Talk: What Nobody Tells You About Starting Over" data-duration="17:34">
+            <div class="video-card-thumb">
+              <img src="assets/raia_portrait.jpg" alt="Honest Talk: Starting Over" />
+              <div class="card-play-overlay">
+                <span class="mini-play-icon">▶</span>
+              </div>
+              <span class="duration-badge">17:34</span>
+              <span class="cat-pill">💬 Let's Talk</span>
+            </div>
+            <div class="video-card-body">
+              <h3 class="video-card-title">"Honest Talk: What Nobody Tells You About Starting Over"</h3>
+              <p class="video-card-summary">Late night tea, raw emotions, and finding the courage to pivot when life gets confusing.</p>
+              <div class="video-card-foot">
+                <span>49K views · 2 weeks ago</span>
+                <button class="icon-link-btn">Play &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="video-card glass-panel" data-category="Day In My Life" data-title="Morning Routine That Actually Works (For Me)" data-duration="14:50">
+            <div class="video-card-thumb">
+              <img src="assets/everyday_magic.jpg" alt="Morning Routine That Actually Works" />
+              <div class="card-play-overlay">
+                <span class="mini-play-icon">▶</span>
+              </div>
+              <span class="duration-badge">14:50</span>
+              <span class="cat-pill">🗓️ Day In My Life</span>
+            </div>
+            <div class="video-card-body">
+              <h3 class="video-card-title">"Morning Routine That Actually Works (For Me)"</h3>
+              <p class="video-card-summary">No 10-step impossibilities. Just slow coffee, sunlight, stretching, and grounded intentions.</p>
+              <div class="video-card-foot">
+                <span>22K views · 3 weeks ago</span>
+                <button class="icon-link-btn">Play &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 5 -->
+          <div class="video-card glass-panel" data-category="Special Moments" data-title="Trying 5 Things I've Always Been Scared To Do" data-duration="19:45">
+            <div class="video-card-thumb">
+              <img src="assets/golden_hour_coast.jpg" alt="Trying 5 Things I've Always Been Scared To Do" />
+              <div class="card-play-overlay">
+                <span class="mini-play-icon">▶</span>
+              </div>
+              <span class="duration-badge">19:45</span>
+              <span class="cat-pill">🎉 Special Moments</span>
+            </div>
+            <div class="video-card-body">
+              <h3 class="video-card-title">"Trying 5 Things I've Always Been Scared To Do"</h3>
+              <p class="video-card-summary">From cliffside hiking to open mic night — testing my limits and discovering new thrills.</p>
+              <div class="video-card-foot">
+                <span>31K views · 1 month ago</span>
+                <button class="icon-link-btn">Play &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 6 -->
+          <div class="video-card glass-panel" data-category="Hauls & Favorites" data-title="My Favorite Places, People & Things Right Now" data-duration="16:20">
+            <div class="video-card-thumb">
+              <img src="assets/food_mood_ramen.jpg" alt="My Favorite Places, People & Things Right Now" />
+              <div class="card-play-overlay">
+                <span class="mini-play-icon">▶</span>
+              </div>
+              <span class="duration-badge">16:20</span>
+              <span class="cat-pill">🛍️ Hauls & Favorites</span>
+            </div>
+            <div class="video-card-body">
+              <h3 class="video-card-title">"My Favorite Places, People & Things Right Now"</h3>
+              <p class="video-card-summary">A cozy sit-down roundup of books, recipes, vintage finds, and songs on repeat.</p>
+              <div class="video-card-foot">
+                <span>19K views · 1 month ago</span>
+                <button class="icon-link-btn">Play &rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Callout Banner -->
+        <div class="youtube-banner glass-panel">
+          <div class="youtube-banner-text">
+            <h3>Subscribe on YouTube for Weekly Episodes 🎥</h3>
+            <p>New long-form vlogs drop every Thursday at 6:00 PM EST. Turn on notifications so you never miss a premiere.</p>
+          </div>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Subscribe: Life With Raia</span>
+            <span class="btn-icon">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Player Modal -->
+  <div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="video-modal-wrapper glass-panel">
+      <div class="video-modal-header">
+        <div class="video-modal-title-wrap">
+          <span class="video-badge-pill" id="videoModalBadge">🗓️ Day In My Life</span>
+          <h3 class="video-modal-title" id="videoModalTitle">Video Title</h3>
+        </div>
+        <button class="modal-close-btn" id="closeVideoModalBtn" aria-label="Close video player">&times;</button>
+      </div>
+      <div class="video-player-container">
+        <div class="simulated-player" id="simulatedPlayer">
+          <img src="assets/featured_vlog.jpg" alt="Video scene preview" id="videoModalThumb" class="sim-player-thumb" />
+          <div class="sim-player-controls-overlay">
+            <button class="sim-play-toggle" id="simPlayToggle" aria-label="Play or pause video">
+              <span class="sim-icon-play" id="simPlayIcon">▶</span>
+            </button>
+            <div class="sim-progress-track" id="simProgressTrack">
+              <div class="sim-progress-bar" id="simProgressBar"></div>
+            </div>
+            <div class="sim-time-display" id="simTimeDisplay">00:00 / 18:42</div>
+          </div>
+          <div class="sim-watermark">Life With Raia · Official Player</div>
+        </div>
+      </div>
+      <div class="video-modal-footer">
+        <p id="videoModalDesc">Video description goes here.</p>
+        <div class="video-modal-actions">
+          <button class="btn btn-secondary-sm" id="copyVideoLinkBtn">🔗 Copy Link</button>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary-sm">Open on YouTube ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔻 Footer -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="newsletter-box glass-panel" id="newsletterSignup">
+        <div class="newsletter-content">
+          <span class="newsletter-pill">💌 The Raia Letter</span>
+          <h3 class="newsletter-title">Join the community</h3>
+          <p class="newsletter-desc">
+            "Get updates, behind-the-scenes, and good vibes straight to your inbox."
+          </p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <div class="newsletter-input-group">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required aria-label="Email for newsletter" />
+            <button type="submit" class="btn btn-primary" id="newsletterSubmitBtn">
+              <span>Subscribe ✨</span>
+            </button>
+          </div>
+          <span class="newsletter-feedback" id="newsletterFeedback"></span>
+        </form>
+      </div>
+
+      <div class="footer-main-row">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-logo">
+            <span class="logo-sparkle">✦</span>
+            <span class="logo-text">Life With Raia</span>
+          </a>
+          <p class="footer-tagline">
+            <em>Life With Raia — Real life. Real moments. Always growing. ✨</em>
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="footer-legal">
+          &copy; 2026 Life With Raia. All rights reserved.
+        </p>
+        <div class="footer-back-to-top">
+          <a href="#" class="back-top-link" id="backToTopBtn">
+            <span>Back to top</span>
+            <span>&uarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
